@@ -15,7 +15,7 @@ Visualizacion de Perfil de Twitter.
 - CSS
 - HTML
 
-#### Visualiza la App:  [Mira Aquí](https://marvin1604.github.io/Login-de-Instagram/)<br>
+#### Visualiza la App:  [Mira Aquí](https://marvin1604.github.io/Twitter-profile/)<br>
 
 ### Login
 ![](https://github.com/marvin1604/Twitter-profile/blob/main/images/Captura.JPG)
