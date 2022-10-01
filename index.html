@@ -8,594 +8,287 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
     
     <title>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</title>
-    <style>
-        */{
-            margin: 0;
-            padding: 0;            
-            box-sizing: border-box;
-            
-        }
-        :root{
-            --black: rgb(0,0,0);
-            --withe: rgb(255,255,255);
-            --celeste-botton: #36A2EF;
-            --marco-gris: rgb(215,215,215);
-
-        }
-        html{
-            font-size: 62.5%;
-            font-family:  sans-serif;
-
-        }
-        body{
-            height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        /* izquierda */
-        .profile-left{
-            width: 266px;
-            height: 100vh;            
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            border-right: 1px solid var(--marco-gris);            
-        }
-        
-        .container-menu{
-            width: 250px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;            
-            margin: 0;
-            margin-top: 20px;
-        }
-        .container-logo{
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-        }
-        .logo{
-            width: 50px;
-            height: 50px;            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-        }
-        .logo:hover{
-            background: var(--marco-gris);
-        }
-        .container-logo img{
-            width: 35px;
-        }
-        .item-menu{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            margin: 0;
-            width: 150px;
-            height: 50px;            
-            padding: 0 10px;
-        }
-        .item-menu:nth-child(9){
-            margin-bottom: 10px;
-            
-        }
-        .item-menu:hover{
-            margin-left: 0;
-            border-radius: 20px;
-            background: var(--marco-gris);
-        }
-        .item-menu a{
-            text-decoration: none;
-            color: #0f1419d2;
-            font-size: 20px;
-            margin: 0;
-            
-        }
-        .item-menu p{
-            font-size: 1.8rem;
-            margin: 0;
-            margin-left: 16px;
-            color: #0F1419;
-            font-weight: 300;
-        }
-        .button-primary{
-            width: 225px;
-            height: 52px;
-            border-radius: 40px;
-            border: none;
-            background: var(--celeste-botton);
-            color: var(--withe);
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .button-primary:hover{
-            background: #2D85C4;
-        }
-
-        /* centro */
-        .container-nombre{
-            display: flex;
-            align-items: center;
-            margin: 0;
-        }
-        .container-nombre a{
-            font-size:16px;
-            text-decoration: none;
-            color: #0F1419;
-            margin-left: 16px;
-        }
-        .nombre-profile{
-            font-size: 16px;
-            font-weight: bold;
-            margin-left: 40px;
-        }
-        .nombre-profile p{
-            margin: 4px;
-        }
-        .nombre-profile p:nth-child(2){
-            font-size: 12px;
-            color: gray;
-            font-weight: 300;
-        }
-
-        .profile-foto{
-            position: relative;
-        }
-        .foto-principal{
-            width: 600px;
-            height: 200px;
-        }
-        .foto-secundaria{
-            width: 134px;
-            height: 134px;
-            border-radius: 50%;
-            border: 5px solid white;
-            position: absolute;
-            left: 10px;
-            top: 130px;
-        }
-        .buttons{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            margin: 12px;
-        }
-        .puntos{
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: 1px solid var(--marco-gris);
-            background: var(--withe);
-            display: flex;
-            justify-content: center;
-            align-items: star;  
-            margin-right: 8px;          
-        }
-        .puntos p{
-            margin: 0;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .follow{
-            background: var(--black);
-            color: var(--withe);
-            font-size: 16px;
-            width: 80px;
-            height: 30px;
-            border-radius: 20px;
-        }
-        .puntos:hover{
-            cursor:pointer;
-            background: var(--marco-gris);
-        }
-        .follow:hover{
-            background: rgba(0, 0, 0, 0.687);
-            cursor:pointer;
-        }
-        .profile-body{
-            margin-top: 40px;
-            margin-left: 12px;
-        }
-        .profile-body p:nth-child(2){
-            font-size: 14px;
-        }
-        .descripcion-profile{
-            margin-top: 12px;
-            margin-left: 12px;
-        }
-        .descripcion-profile p{
-            font-size: 1.4rem;
-            margin: 0;
-        }
-        .hashtag{
-            margin-left: 12px;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            font-size: 1.3rem;
-        }
-        .hashtag a{
-            text-decoration: none;
-            color: var(--celeste-botton);
-        }
-        .informacion{
-            display: flex;
-            margin-left: 12px;
-            font-size: 1.4rem;
-            margin-top: 0;
-            height: 20px;
-            color: gray;
-        }
-        .informacion-items{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            margin-right: 12px;
-        }        
-        .enlace a{
-            text-decoration: none;
-            color: var(--celeste-botton);
-        }
-        .informacion-items i{
-            margin-right: 6px;
-        }
-        .menu-tweet{
-            display: flex;
-            width: 100%;
-            justify-content: stretch;
-            margin-top: 10px;
-            font-size: 1.4rem;
-            font-weight: 600;
-            border-bottom: 1px solid var(--marco-gris);
-            color: gray;            
-        }
-        .tweet{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            color: #0F1419;
-        }
-        .tweets,.media,.likes{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        .tweet:hover,.tweets:hover,.media:hover,.likes:hover  {
-            background: var(--marco-gris);
-        }
-        .first-tweet{
-            position: relative;
-        }
-        .imagen-tweet{
-            height: 200px;
-            width: 48px;
-            margin: 8px;
-            
-        }
-        .imagen-tweet img{
-            width: 48px;
-            border-radius: 50%;
-        } 
-        .cuerpo-tweet{
-            position: absolute;
-            top: 10px;
-            left: 60px;
-        }
-        .nombre-tweet{
-            display: flex;
-            margin-left: 0;
-            justify-content: start;
-            align-items: center;
-        }
-        .puntos-small{
-            border: none;
-            margin-left: 40px;
-        }
-        
-        .texto{
-            font-size: 1.4rem;
-        }
-
-       
-        /* lado derecho */
-        .profile-rigth{
-            border-left: 1px solid var(--marco-gris) ;
-        }
-        .container-profile-rigth{
-            width: 350px;
-            height: 100%;
-            margin-top: 8px;
-            margin-left: 20px;
-        }
-        .container-form{
-            position: relative;
-        }
-        .container-form input{
-            padding: 0;
-            width: 348px;
-            height: 42px;
-            border-radius: 20px;
-            border: none;
-            background: #F4F6F6 ;
-            margin-bottom: 12px;
-        }
-        .search{
-            font-size: 14px;
-            color: gray;
-            position: absolute;
-            top:12px;
-            left: 10px
-        }
-        .container-imagenes{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 113px);
-            gap: 2px;
-            border-radius: 20px;
-            margin-bottom: 12px;
-        }
-        .container-imagenes img{
-            width: 113px;
-            border-radius: 8px;
-        }
-
-        .others-users{
-            display: flex;
-            margin: 30px 4px;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 20px;
-            background: #F4F6F6;
-            border-radius: 20px;
-        }
-        .title-users{
-            font-size: 1.6rem;
-            font-weight: bold;
-        }
-        .user1{
-            display: flex;
-            justify-content: stretch;
-            align-items: center;
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        .datos-user{
-            width: 100%;
-        }
-        .datos-user p{
-            font-size: 12px ;
-            margin: 0;            
-        }
-        .datos-user p:nth-child(1){
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .user1 img{
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            margin-right: 4px ;            
-        }
-        .follow-users{
-            font-size: 15px;
-            width: 120px;
-        }
-        .show-more{
-            display: flex;
-            align-items: center;
-            height: 40px;
-        }
-        .show-more p{
-            font-size: 14px;
-            color: var(--celeste-botton);
-        }     
-    </style>
+    
 </head>
 <body>
-    <div class="profile-left">        
-        <div class="container-menu">
-            <div class="container-logo">
-                <div class="logo">
-                    <img src="./images/Twitter_icon.png" alt="">
+    <main>
+        <section class="profile-left">        
+                <div class="container-menu">
+                    <div class="container-logo">
+                        <div class="logo">
+                            <img src="./images/Twitter_icon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item-menu item-menu1">
+                        <img src="https://img.icons8.com/windows/32/000000/home.png"/>
+                        <p>Home</p>
+                    </div>
+                    <div class="item-menu item-menu2">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/hashtag.png"/>
+                        <p>Explore</p>
+                    </div>
+                    <div class="item-menu item-menu3">
+                        <img src="https://img.icons8.com/small/64/000000/search--v1.png"/>
+                        <p>Search</p>
+                    </div>
+                    <div class="item-menu item-menu4">
+                        <img src="https://img.icons8.com/ios/50/000000/appointment-reminders--v1.png"/>
+                        <p>Notifications</p>
+                    </div>
+                    <div class="item-menu item-menu5">
+                        <img src="https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-messages-business-inkubators-glyph-inkubators.png"/>            
+                        <p>Messages</p>
+                    </div>
+                    <div class="item-menu item-menu6">
+                        <img src="https://img.icons8.com/external-phatplus-lineal-phatplus/64/000000/external-bookmarks-essential-phatplus-lineal-phatplus.png"/>
+                    
+                        <p>Bookmarks</p>
+                    </div>
+                    <div class="item-menu item-menu7">
+                        <img src="https://img.icons8.com/windows/32/000000/ingredients-list.png"/>
+                        <p>Lists</p>
+                    </div>
+                    <div class="item-menu item-menu8">
+                        <img src="https://img.icons8.com/small/64/000000/gender-neutral-user.png"/>
+                        <p>Profile</p>
+                    </div>
+                    <div class="item-menu item-menu9">
+                        <img src="https://img.icons8.com/small/64/000000/connection-status-off.png"/>
+                        <p>More</p>
+                    </div>
+                    <div class="button-primary">
+                        <button >Tweet</button>
+                    </div>
+                    <div class="button-mobile">
+                        <img src="./images/pluma.jpg" alt="">
+                    </div>             
+                    
                 </div>
-            </div>
-            <div class="item-menu item-menu1">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Home</p>
-            </div>
-            <div class="item-menu item-menu2">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Explore</p>
-            </div>
-            <div class="item-menu item-menu3">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Notifications</p>
-            </div>
-            <div class="item-menu item-menu4">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Messages</p>
-            </div>
-            <div class="item-menu item-menu5">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Bookmarks</p>
-            </div>
-            <div class="item-menu item-menu6">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Lists</p>
-            </div>
-            <div class="item-menu item-menu7">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>Profile</p>
-            </div>
-            <div class="item-menu item-menu8">
-                <a href="" class="fa-solid fa-house"></a>
-                <p>More</p>
-            </div>
-            <button class="button-primary">Tweet</button>
-            
-        </div>
-        <div class="container-usuario">
-
-        </div>
-    </div>
-    <div class="profile-center">
-
-        <div class="container-nombre">
-            <a href="" class="fa-solid fa-arrow-left"></a>
-            <div class="nombre-profile">
-                <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
-                <p>12.4K Tweets</p>
-            </div>            
-        </div>
-
-        <div class="profile-foto">
-            <img src="./images/foto-fondo.jfif" alt="" class="foto-principal">
-            <img src="./images/hCNodzg2_400x400.jpg" alt="" class="foto-secundaria">
-        </div>
-
-        <div class="container-tweets">
-            <div class="buttons">
-                <div class="puntos">
-                    <p>...</p>
+                <div class="container-usuario">
+        
                 </div>
-                <button class="follow">Follow</button>
-            </div>
-        </div>
-
-        <div class="nombre-profile profile-body">
-            <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
-            <p>@fjuandc</p>
-        </div>
-        <div class="descripcion-profile">
-            <p>📚🍏 The Eternal Student </p>
-            <p>👨‍🏫 Course Director and Teacher in @Platzi</p>
-            <p>✍️ Computer Science and Programming</p>
-        </div>
-        <div class="hashtag">
-            <a href="">#NuncaParesDeAprender</a>
-            <p>💚🚀</p>
-        </div>
-        <div class="informacion">
-            <div class="ubicacion informacion-items">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Bogotá, DC, Colombia</p>
-            </div>
-            <div class="enlace informacion-items">
-                <i class="fa-solid fa-link"></i>
-                <a href="https://marvin1604.github.io/portafolio/">marvin1604.github.io/portafolio/</a>
-            </div>
-            <div class="unido informacion-items">
-                <i class="fa-solid fa-calendar"></i>
-                <p>Joined May 2016</p>
-            </div>
-            
-        </div>
-        <div class="menu-tweet">
-            <div class="tweet">
-                <p>Tweets</p>
-            </div>
-            <div class="tweets">
-                <p>Tweets&replies</p>
-            </div>
-            <div class="media">
-                <p>Media</p>
-            </div>
-            <div class="likes">
-                <p>Likes</p>
-            </div>
-        </div>
-        <div class="first-tweet">
-            <div class="imagen-tweet">
-                <img src="./images/hCNodzg2_400x400.jpg" alt="">
-            </div>            
-            <div class="cuerpo-tweet">
-                <div class="nombre-profile nombre-tweet">
+        </section>
+        
+        
+        <section class="profile-center">         
+    
+            <div class="container-nombre">
+                <a href="" class="fa-solid fa-arrow-left"></a>
+                <div class="nombre-profile">
                     <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
-                    <p>@fjuandc ·May 24</p>
-                    <div class="puntos puntos-small">
+                    <p>💚🚀JuanDC: Juan David...</p>
+                    <p>12.4K Tweets</p>
+                </div>            
+            </div>
+            <div class="profile-foto">
+                <img src="./images/foto-fondo.jfif" alt="" class="foto-principal">
+                <img src="./images/hCNodzg2_400x400.jpg" alt="" class="foto-secundaria">
+            </div>
+            <div class="container-tweets">
+                <div class="buttons">
+                    <div class="puntos">
                         <p>...</p>
                     </div>
+                    <button class="follow">Follow</button>
                 </div>
-                <div class="texto">
-                    <p>
-                        👯 Las habilidades primordiales que debes
-                         dominar para trabajar como frontend developer:
-                         <br>
-                    </p>
-                    <p>
-                        🕸 Manipulación del DOM <br>
-                        Interactuar 🌚 íntimamente 🌝 con los usuarios 🫂
-                    </p>
-                    <p>
-                        ☎️ Consumo de API REST <br>
-                        Traducir esas interacciones en consultas al backend 🛩
-                    </p>
-                </div>
-                <div class="video">
-                    <img src="./images/video.JPG" alt="">
-                </div>
-            </div>            
-        </div>
-
-    </div>
-    <div class="profile-rigth">
-        <div class="container-profile-rigth">
-            <div class="container-form">
-                <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="text" name="" id="" placeholder="            Search Twitter">
             </div>
-            <div class="container-imagenes"> 
-                <img src="./images/capitan-america.jpg" alt=""> 
-                <img src="./images/capitan-america.jpg" alt="">
-                <img src="./images/capitan-america.jpg" alt="">
-                <img src="./images/capitan-america.jpg" alt="">
-                <img src="./images/capitan-america.jpg" alt="">
-                <img src="./images/capitan-america.jpg" alt="">  
+            <div class="nombre-profile profile-body">
+                <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
+                <p>@fjuandc</p>
             </div>
-            <div class="others-users">
-                <h2 class="title-users">You might like</h2>
-
-                <div class="user1">
-                    <img src="https://pbs.twimg.com/profile_images/1489601398849216515/ktuvrnIH_400x400.png" alt="" class="logo-user1">
-                    <div class="datos-user">
-                        <p>Seguridad América Latam</p>
-                        <p>@Americassl</p>
-                    </div>
-                    <button class="follow follow-users">Follow</button>
-                </div>
-                <div class="user1">
-                    <img src="https://pbs.twimg.com/profile_images/1572273809146744835/PpvQ2mjN_400x400.jpg" alt="" class="logo-user1">
-                    <div class="datos-user">
-                        <p>Ricardo Celis</p>
-                        <p>@CelisMX</p>
-                    </div>
-                    <button class="follow follow-users">Follow</button>
-                </div>
-
-                <div class="user1">
-                    <img src="https://pbs.twimg.com/profile_images/1547613532841119745/4H3H07Gh_400x400.jpg" alt="" class="logo-user1">
-                    <div class="datos-user">
-                        <p>Nequi</p>
-                        <p>@Nequi</p>
-                    </div>
-                    <button class="follow follow-users">Follow</button>
-                </div>
-                <div class="show-more">
-                    <p>Show more</p>
-                </div>
-
-
+            <div class="descripcion-profile">
+                <p>📚🍏 The Eternal Student </p>
+                <p>👨‍🏫 Course Director and Teacher in @Platzi</p>
+                <p>✍️ Computer Science and Programming</p>
             </div>
-        </div>    
-    </div>
+            <div class="hashtag">
+                <a href="">#NuncaParesDeAprender</a>
+                <p>💚🚀</p>
+            </div>
+            <div class="informacion">
+                <div class="ubicacion informacion-items">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Bogotá, DC, Colombia</p>
+                </div>
+                <div class="enlace informacion-items">
+                    <i class="fa-solid fa-link"></i>
+                    <a href="https://marvin1604.github.io/portafolio/">marvin1604.github.io/portafolio/</a>
+                </div>
+                <div class="unido informacion-items">
+                    <i class="fa-solid fa-calendar"></i>
+                    <p>Joined May 2016</p>
+                </div>            
+            </div>
+            <div class="menu-tweet">
+                <div class="tweet">
+                    <p>Tweets</p>
+                </div>
+                <div class="tweets">
+                    <p>Tweets&replies</p>
+                </div>
+                <div class="media">
+                    <p>Media</p>
+                </div>
+                <div class="likes">
+                    <p>Likes</p>
+                </div>
+            </div>
+            <div class="first-tweet body-tweet">
+                <div class="imagen-tweet">
+                    <img src="./images/hCNodzg2_400x400.jpg" alt="">
+                </div>            
+                <div class="cuerpo-tweet">
+                    <div class="nombre-profile nombre-tweet">
+                        <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
+                        <p>@fjuandc ·May 24</p>
+                        <div class="puntos puntos-small">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <p>
+                            👯 Las habilidades primordiales que debes
+                             dominar para trabajar como frontend developer:
+                             <br>
+                        </p>
+                        <p>
+                            🕸 Manipulación del DOM <br>
+                            Interactuar 🌚 íntimamente 🌝 con los usuarios 🫂
+                        </p>
+                        <p>
+                            ☎️ Consumo de API REST <br>
+                            Traducir esas interacciones en consultas al backend 🛩
+                        </p>
+                    </div>
+                    <div class="video">
+                        <img src="./images/video.JPG" alt="">
+                    </div>
+                    <div class="interaccion-tweet">
+                        <ul>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/speech-bubble.png"/>
+                                <p>12</p>
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/retweet.png"/>
+                                <p>49</p>
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/like--v1.png"/>
+                                <p>300</p>
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/up-squared.png"/>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>            
+            </div>
+            <section class="first-tweet body-tweet">
+                <div class="imagen-tweet">
+                    <img src="./images/hCNodzg2_400x400.jpg" alt="">
+                </div>            
+                <div class="cuerpo-tweet">
+                    <div class="nombre-profile nombre-tweet">
+                        <p>💚🚀JuanDC: Juan David Castro ⚡️👨‍💻 ⚛️</p>
+                        <p>@fjuandc ·May 24</p>
+                        <div class="puntos puntos-small">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <p>
+                            👯 Las habilidades primordiales que debes
+                             dominar para trabajar como frontend developer:
+                             <br>
+                        </p>
+                        <p>
+                            🕸 Manipulación del DOM <br>
+                            Interactuar 🌚 íntimamente 🌝 con los usuarios 🫂
+                        </p>
+                        <p>
+                            ☎️ Consumo de API REST <br>
+                            Traducir esas interacciones en consultas al backend 🛩
+                        </p>
+                    </div>
+                    <div class="video">
+                        <img src="./images/video.JPG" alt="">
+                    </div>
+                    <div class="interaccion-tweet">
+                        <ul>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/speech-bubble.png"/>
+                                <p>12</p>
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/retweet.png"/>
+                                <p>49</p>
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/like--v1.png"/>
+                                <p>300</p>
+                            </li>
+                            <li>
+                                <img src="https://img.icons8.com/small/64/000000/up-squared.png"/>
+                            </li>
+                        </ul>
+                </div>            
+            </div>
+        </section>
+        
+        <section class="profile-rigth">
+            <div class="container-profile-rigth">
+                <div class="container-form">
+                    <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" name="" id="" placeholder="            Search Twitter">
+                </div>
+                <div class="container-imagenes"> 
+                    <img src="./images/capitan-america.jpg" alt=""> 
+                    <img src="./images/capitan-america.jpg" alt="">
+                    <img src="./images/capitan-america.jpg" alt="">
+                    <img src="./images/capitan-america.jpg" alt="">
+                    <img src="./images/capitan-america.jpg" alt="">
+                    <img src="./images/capitan-america.jpg" alt="">  
+                </div>
+                <div class="others-users">
+                    <h2 class="title-users">You might like</h2>
+    
+                    <div class="user1">
+                        <img src="https://pbs.twimg.com/profile_images/1489601398849216515/ktuvrnIH_400x400.png" alt="" class="logo-user1">
+                        <div class="datos-user">
+                            <p>Seguridad América Latam</p>
+                            <p>@Americassl</p>
+                        </div>
+                        <button class="follow follow-users">Follow</button>
+                    </div>
+                    <div class="user1">
+                        <img src="https://pbs.twimg.com/profile_images/1572273809146744835/PpvQ2mjN_400x400.jpg" alt="" class="logo-user1">
+                        <div class="datos-user">
+                            <p>Ricardo Celis</p>
+                            <p>@CelisMX</p>
+                        </div>
+                        <button class="follow follow-users">Follow</button>
+                    </div>
+    
+                    <div class="user1">
+                        <img src="https://pbs.twimg.com/profile_images/1547613532841119745/4H3H07Gh_400x400.jpg" alt="" class="logo-user1">
+                        <div class="datos-user">
+                            <p>Nequi</p>
+                            <p>@Nequi</p>
+                        </div>
+                        <button class="follow follow-users">Follow</button>
+                    </div>
+                    <div class="show-more">
+                        <p>Show more</p>
+                    </div>
+    
+    
+                </div>
+            </div>    
+        </section>
+    </section>
 </body>
 </html>
