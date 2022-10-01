@@ -17,7 +17,13 @@ Visualizacion de Perfil de Twitter.
 
 #### Visualiza la App:  [Mira Aquí](https://marvin1604.github.io/Twitter-profile/)<br>
 
-### Login
+### Mobile
+![](https://github.com/marvin1604/Twitter-profile/blob/main/images/mobile.JPG)
+
+### Tablet
+![](https://github.com/marvin1604/Twitter-profile/blob/main/images/tablet.JPG)
+
+### Desktop
 ![](https://github.com/marvin1604/Twitter-profile/blob/main/images/Captura.JPG)
 
 
